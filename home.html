@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MTex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+  <style>
+    html {
+  scroll-behavior: smooth;
+}
+  </style>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    function contectpop() {
+    Swal.fire(
+    'Call Us or Whatsapp Us on :',
+  '9374606290 OR 9586225769 ' ,
+  'success'
+)
+
+            }
+    </script>
+
+</head>
+<body>
+  
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" ">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="home.html">MText.in</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="contectpop();" href="#">Contect Us</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<main>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">MTex</h1>
+      <p class="lead fw-normal">Explore the world of Tread<br>Get best quality T-Shirt, Jackets and Sarees. </p>
+      <a class="btn btn-outline-secondary" href="products.html">Products</a>
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <img src="shop/img_1.png">
+    </div>
+    <div class="col-sm">
+      <br><br><br><br><br><br><br>
+      Best quality sarees With Chanderi Silk cloth ,Benglori Silk Cloth<br><br>
+      <form action="products.html#sharees" ><button type="submit" class="btn btn-primary" >Visits</button></form>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:15px">
+    <div class="col-sm">
+      <br><br><br><br><br><br><br>
+      Best quality T-Shirt With Knit-Febric, Spandex Febric, Polyestre Febric Cloth<br><br>
+      <form action="products.html#T-Shirt" ><button type="submit" class="btn btn-primary" >Visits</button></form>
+    </div>
+    <div class="col-sm">
+      <img src='shop/img_2.png' width="540px" height="360px">
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:15px">
+    <div class="col-sm">
+      <img src='shop/img_3.png' width="540px" height="360px">
+    </div>
+    <div class="col-sm">
+      <br><br><br><br><br><br><br>
+      Best quality Jacket Knit Febric, Spandex Febric, Polyestre Febric,Zuchrich and Skuba Febrics Cloth<br><br>
+      <form action="products.html#Jackets" ><button type="submit" class="btn btn-primary" >Visits</button></form>
+
+    </div>
+  </div>
+
+  <div class="row" style="margin-top:15px">
+    <div class="col-sm">
+      <br><br><br><br><br><br><br>
+      Best quality Polyestre Febric Cloth<br><br>
+      <form action="products.html#Fabrics" ><button type="submit" class="btn btn-primary" >Visits</button></form>
+    </div>
+    <div class="col-sm">
+      <img src='shop/img_4.png' width="540px" height="360px">
+    </div>
+  </div>
+</div>
+</main>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin-top:15px" id="contectinfo">
+  <table style="margin-left:30px">
+    <tr>
+      <td>
+        <p style="color:white">Contect Us :<br>&nbsp&nbsp&nbsp&nbsp&nbsp Whatsapp Number&nbsp : 9374606290<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp Contect Number&nbsp&nbsp&nbsp&nbsp&nbsp : 9586225769 <br> &nbsp&nbsp&nbsp&nbsp&nbsp E-mail &nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : m.tex91000@gmail.com <br>&nbsp&nbsp&nbsp&nbsp&nbsp  Address &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          : Block No - 22, Khodiyar Nagar, Oppo- Sun Water Plant,<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNear Shidhdhivinayak Temple, Bhathina, Surat - 395002
+      </p>
+        <br>
+        <div>
+        <form action="https://www.instagram.com/mtex91000/" ><input type="image" src='shop/logo/insta.png' alt="Submit" width="30" height="30" style="float:left;margin-left:10px">
+        </form><p style="float:left">&nbsp&nbsp</p>
+        <form action="https://www.facebook.com/mtex.textiles.3" ><input type="image" src='shop/logo/fb.png' alt="Submit" width="30" height="30">
+        </form></div>
+      </td>
+
+      <td >
+        <p style="color:white;margin-left:80px">
+          Started From 2020 and continuously giving reliable services and making our customer happy.<br>
+          © M.Tex Febrics 2005 copyrights reserved.<br>
+          <br>
+          content desined by cherish patel.
+          contect at cherishpatel2001@gmail.com<br>
+          whatsapp on +91 8200314290
+        </p>
+
+      </td>
+      <td >
+        <img src='shop/drawing.svg'  style="margin-left:80px" >
+      </td>
+    </tr>
+  </table>
+
+</nav>
+
+
+</body>
+</html>

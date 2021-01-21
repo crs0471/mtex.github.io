@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MTex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    function contectpop() {
+    Swal.fire(
+    'Call Us or Whatsapp Us on :',
+  '9374606290 OR 9586225769 ' ,
+  'success'
+)
+
+            }
+    </script>
+
+    <style>
+html {
+  scroll-behavior: smooth;
+}
+
+</style>
+
+ <style>
+.cont {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+  <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+
+
+
+</head>
+<body>
+ 
+<nav class="navbar navbar-expand-lg navbar-light bg-light" ">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="home.html">MText.in</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="contectpop();">Contect Us</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5 text-center container">
+
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Your Desired Cloths</h1>
+        <p class="lead text-muted">Are you looking for best quality cloths?<br>You will get Best quality T-shirts, Sarees, Jackets Here.. </p>
+        <p>
+          <a onclick="contectpop();" href="#" class="btn btn-primary my-2">Contect Us</a>
+          <a href="home.html" class="btn btn-secondary my-2">Home</a>
+        </p>
+          <p class="lead text-muted">Tell us what are you looking for ? </p>
+        <p>
+          <a href="#sharees" class="btn btn-primary my-2">Sharess</a>
+          <a href="#T-Shirt" class="btn btn-primary my-2">T-Shirt</a>
+          <a href="#Jackets" class="btn btn-primary my-2">Jackets</a>
+          <a href="#Fabrics" class="btn btn-primary my-2">Fabrics</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+<div class="album py-5 bg-light">
+    <!-- this is sarees block -->
+    <div class="container">
+      <div id="sharees">
+        <h1>Sharees</h1>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/1.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH001<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/2.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH002<br>Pure Poly Chanderi Silk <br> Rs. 599 only </p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/3.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH003<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/4.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH004<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/5.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH005<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/6.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH006<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/7.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH007<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/8.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH008<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/9.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH009<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/10.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH010<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/11.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH011<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/12.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH012<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/13.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH013<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/14.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH014<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/15.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH015<br>Pure Poly Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/16.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH016<br>Chanderi Silk <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/17.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH017<br>Ggt Saree<br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/18.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH018<br>Ggt Saree<br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/shareesimg/19.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : SH019<br>Ggt Saree<br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="album py-5 bg-light">
+    <!-- this is T-shirt block -->
+    <div class="container">
+      <div id="T-Shirt">
+        <h1>T-Shirt</h1>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/tshirtimg/1.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : TS001<br>Knited-Domestic Febrics  <br> Rs. 499 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/tshirtimg/2.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : TS002<br>Knited-Domestic Febrics  <br> Rs. 499 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="album py-5 bg-light">
+    <!-- this is Jackets block -->
+    <div class="container">
+      <div id="Jackets">
+        <h1>Jackets</h1>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/jacketimg/1.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : JK001<br>Knited-Domestic Febrics <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/jacketimg/2.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : JK002<br>Knited-Domestic Febrics <br> Rs. 599 only</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+ <div class="album py-5 bg-light">
+    <!-- this is Jackets block -->
+    <div class="container">
+      <div id="Fabrics">
+        <h1>Fabrics</h1>
+      </div>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/1.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB001<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/2.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB002<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/3.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB003<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/4.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB004<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/5.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB005<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/6.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB006<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/7.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB007<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/8.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB008<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/9.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB009<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/10.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB010<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/11.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB011<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/12.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB012<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/13.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB013<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/14.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB014<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/15.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB015<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/16.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB016<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/17.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB017<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/18.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB018<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/19.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB019<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/20.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB020<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/21.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB021<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/22.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB022<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/23.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB023<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/24.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB024<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/25.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB025<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/26.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB026<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/27.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB027<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/28.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB028<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/29.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB029<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/30.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB030<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/31.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB031<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/32.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB032<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/33.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB033<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/34.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB034<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/35.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB035<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/36.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB036<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/37.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB037<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/38.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB038<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/39.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB039<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/40.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB040<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/41.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB041<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/42.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB042<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/43.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB043<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/44.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB044<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/45.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB045<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/46.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB046<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/47.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB047<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/48.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB048<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/49.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB049<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/50.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB050<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/51.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB051<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/52.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB052<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/53.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB053<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/54.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB054<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/55.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB055<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/56.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB056<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/57.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB057<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/58.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB058<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/59.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB059<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+          <div class="col">
+          <div class="card shadow-sm">
+                <img src='shop/fabricsimg/60.jpeg'width="100%" height="400">
+                <p style="margin-top:10px;margin-left:10px">PROD_ID : FB060<br>Polyester Fabrics<br> Kindly contact for price please</p>
+                <button type="button" class="btn btn-info" onclick="contectpop();" >Contact Us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin-top:15px" id="contectinfo">
+  <table style="margin-left:30px">
+    <tr>
+      <td>
+        <p style="color:white">Contect Us :<br>&nbsp&nbsp&nbsp&nbsp&nbsp Whatsapp Number&nbsp : 9374606290<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp Contect Number&nbsp&nbsp&nbsp&nbsp&nbsp : 9586225769 <br> &nbsp&nbsp&nbsp&nbsp&nbsp E-mail &nbsp&nbsp&nbsp&nbsp&nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : m.tex91000@gmail.com  <br>&nbsp&nbsp&nbsp&nbsp&nbsp  Address &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          : Block No - 22, Khodiyar Nagar, Oppo- Sun Water Plant,<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNear Shidhdhivinayak Temple, Bhathina, Surat - 395002
+      </p>
+        <br>
+        <div>
+        <form action="https://www.instagram.com/mtex91000/" ><input type="image" src='shop/logo/insta.png' alt="Submit" width="30" height="30" style="float:left;margin-left:10px">
+        </form><p style="float:left">&nbsp&nbsp</p>
+        <form action="https://www.facebook.com/mtex.textiles.3" ><input type="image" src='shop/logo/fb.png' alt="Submit" width="30" height="30">
+        </form></div>
+      </td>
+
+      <td >
+        <p style="color:white;margin-left:80px">
+          Started From 2020 and continuously giving reliable services and making our customer happy.<br>
+          © M.Tex Febrics 2005 copyrights reserved.<br>
+          <br>
+          content desined by cherish patel.
+          contect at cherishpatel2001@gmail.com<br>
+          whatsapp on +91 8200314290
+        </p>
+
+      </td>
+      <td >
+        <img src='shop/drawing.svg'  style="margin-left:80px" >
+      </td>
+    </tr>
+  </table>
+
+</nav>
+
+
+
+</body>
+</html>
